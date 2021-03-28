@@ -166,7 +166,7 @@ body{
 
     #about .container{
         position: relative;
-        width: 90vw;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
