@@ -749,22 +749,42 @@ footer-col .social-links a i:hover{
 }
 
 
-@media screen and (max-width:992px){
+
+
+@media screen and (max-width:1200px){
     .text-hover{
         padding: 0px;
     }
 
     .text-hover h6{
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 3px;
     }
 
     
 
     .text-hover p{
-        font-size:9px;
+        font-size:11px;
     }
 }
+
+@media screen and (max-width:1200px){
+    .text-hover{
+        padding: 0px;
+    }
+
+    .text-hover h6{
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    
+
+    .text-hover p{
+        font-size:10px;
+    }
+}
+
 
 
 
