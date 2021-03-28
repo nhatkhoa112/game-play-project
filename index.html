@@ -12,87 +12,555 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="logo">
-                <img src="./assets/logo2.jpeg" alt="logo" width="40" class="mr-30">
+    <!--Navbar-->
+    <head class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://icon-library.com/images/gaming_icon_png_549346_30142.png" alt="gamepad"
+                        height="50px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Store
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#store1">Action</a></li>
+                                <li><a class="dropdown-item" href="#store2">Role-playing</a></li>
+                                <li><a class="dropdown-item" href="#store3">Sport</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        </nav>
+    </head>
+    <!-- NAVbar-ends -->
+    <!--Landing-page-->
+    <section class="landingpage">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://en.free-wallpapers.su/data/media/8878/big/gm9000.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SPIRITFARER</h5>
+                        <p>Spiritfarer is a cozy management game about dying. As ferrymaster to the deceased, build a
+                            boat to
+                            explore the world, care for your spirit friends, and guide them across mystical seas to
+                            finally release
+                            them into the afterlife. What will you leave behind?</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://gameranx.com/wp-content/uploads/2019/09/Outriders-4K-Wallpaper-1.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>OUTRIDERS</h5>
+                        <p>Outriders’ brutal and bloody combat combines frenetic gunplay, violent powers and deep RPG
+                            systems to
+                            create a true genre hybrid.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.videogamesblogger.com/wp-content/uploads/2020/12/It-Takes-Two-Key-Art-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>IT TAKES TWO</h5>
+                        <p>Embark on the craziest journey of your life in It Takes Two. Invite a friend to join for free
+                            with
+                            Friend’s Pass and work together across a huge variety of gleefully disruptive gameplay
+                            challenges.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Game Store
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Horror</a></li>
-                            <li><a class="dropdown-item" href="#">Sport</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Landing-page-end -->
+    <!-- content -->
+    <section id="store1" class="container">
+        <div class="">
+            <div class="text m-2">
+                <div style="color:white">Action  </div>
+                <div style="color:white">
+                    <button type="button" class="btn btn-outline-light">See more</button>
+                 </div>            
+            </div>       
+        <!-- <div class="mt-4"></div> -->
+
+        <div class="action">
+            <div class="col-lg-4 action1">
+                <div class="card" data-toggle="modal" data-target="#hades">
+                    <img src="https://www.pdvg.it/wp-content/uploads/2020/10/Hades-copertina.jpg" class="card-img-top"
+                        alt="actionno1">
+                        <div class="overlay">
+                            <div class="text-hover">
+                                <h6>Hades</h6>
+                                <P>Hades is a rogue-like dungeon crawler in which you defy the god of the dead as you hack
+                                    and slash your way out of the Underworld of Greek myth.</P>
+                            </div>
+                        </div>       
+                </div>
+            </div>
+            <div class="col-lg-4 action2">
+                <div class="card" data-toggle="modal" data-target="#reddead">
+                    <img src="https://news.xbox.com/en-us/wp-content/uploads/sites/2/2020/04/RDR_XBOX_1920X1080-WIRE.jpg?fit=1920%2C1080"
+                        class="card-img-top" alt="actionno2">
+                        <div class="overlay">
+                            <div class="text-hover">
+                                <h6>Red Dead Redemption 2</h6>
+                                <P>Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, Red
+                                Dead Redemption 2 is an epic tale of honor and loyalty at the dawn of the modern age.
+                                </P>
+                            </div>
+                        </div>    
+                </div>
+            </div>
+            <div class="col-lg-4 action3">
+                <div class="card" data-toggle="modal" data-target="#border3">
+                    <img src="https://images5.alphacoders.com/100/thumb-1920-1004495.jpg" class="card-img-top"
+                        alt="actiono3">
+                        <div class="overlay">
+                            <div class="text-hover">
+                                <h6>Borderland 3</h6>
+                                <P>The original shooter-looter returns, packing bazillions of guns and a mayhem-fueled
+                                    adventure! Blast through new worlds & enemies and save your home from the most ruthless
+                                    cult leaders in the galaxy.</P>
+                            </div>
+                        </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+    </section>
 
-    <!--image slider start-->
-    <div class="image-slider">
-        <div class="slider">
-            <div class="slides">
-            <!--radio buttons start-->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <!--radio buttons end-->
-            <!--slide images start-->
-            <div class="slide first">
-                <img src="./assets/sale2.png" alt="sale">
+    <div class="modal fade" id="hades" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hades</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/91t0ha9x0AE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 fw-light">Developer </div>
+                        <div class="col-3 fw-light">Supergiant Games</div>
+                        <div class="col-3 fw-light">Tags </div>
+                        <div class="col-3 fw-light">Action, Rounge-Lite </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">$9.99</button>
+                </div>
             </div>
-            <div class="slide">
-                <img src="./assets/among-us.jpeg" alt="">
-            </div>
-            <div class="slide">
-                <img src="./assets/dota.jpeg" alt="">
-            </div>
-            <div class="slide">
-                <img src="./assets/league-of-legends.jpeg" alt="">
-            </div>
-            <!--slide images end-->
-            <!--automatic navigation start-->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-            <!--automatic navigation end-->
-            </div>
-            <!--manual navigation start-->
-            <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-            </div>
-            <!--manual navigation end-->
         </div>
-        <!--image slider end-->
-    
-
     </div>
 
+    <div class="modal fade" id="reddead" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Read Dead Redemption 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Dw_oH5oiUSE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 fw-light">Developer </div>
+                        <div class="col-3 fw-light">Supergiant Games</div>
+                        <div class="col-3 fw-light">Tags </div>
+                        <div class="col-3 fw-light">Action, Rounge-Lite </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">$9.99</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal fade" id="border3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Borderland 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d9Gu1PspA3Y"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 fw-light">Developer </div>
+                        <div class="col-3 fw-light">Supergiant Games</div>
+                        <div class="col-3 fw-light">Tags </div>
+                        <div class="col-3 fw-light">Action, Rounge-Lite </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">$9.99</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="store2" class="container">
+        <div class="">
+            <div class="text m-2">
+                <div style="color:white">Role-Playing</div>
+                <div style="color:white">
+                    <button type="button" class="btn btn-outline-light">See more</button>
+                 </div>            
+            </div>       
+        <!-- <div class="mt-4"></div> -->
+
+        <div class="action">
+            <div class="col-lg-4 rpg1">
+                <div class="card" data-toggle="modal" data-target="#cyberpunk2077">
+                    <img src="https://mondaycareer.com/wp-content/uploads/2020/12/cyberpunk-2077.jpg" class="card-img-top"
+                        alt="rpgno1">
+                        <div class="overlay">
+                            <div class="text-hover">
+                                <h6>Cyberpunk 2077</h6>
+                                <P>Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. </P>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-4 rpg2">
+                <div class="card" data-toggle="modal" data-target="#horizonzerodawn">
+                    <img src="https://image.api.playstation.com/vulcan/img/rnd/202009/3000/C14XMwZBi6CYKOacUDf6EzEs.jpg"
+                        class="card-img-top" alt="rpgno2">
+                        <div class="overlay">
+                            <div class="text-hover">
+                                <h6>Horrizon Zero Dawn</h6>
+                                <P>Experience Aloy’s legendary quest to unravel the mysteries of a future Earth ruled by Machines. </P>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 rpg3">
+                <div class="card" data-toggle="modal" data-target="#assassincreedvalhalla">
+                    <img src="https://gamek.mediacdn.vn/133514250583805952/2020/5/8/photo-1-1588875398032720127136.jpg" class="card-img-top"
+                        alt="rpgno3">
+                        <div class="overlay">
+                            <div class="text-hover">
+                                <h6>Assassin's Creed Valhalla</h6>
+                                <P>In Assassin's Creed® Valhalla, become Eivor, a legendary Viking warrior on a quest for glory. Explore England's Dark Ages as you raid your enemies, grow your settlement, and build your political power.</P>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <div class="modal fade" id="cyberpunk2077" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cyberpunk 2077</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BO8lX3hDU30"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 fw-light">Developer </div>
+                        <div class="col-3 fw-light">Supergiant Games</div>
+                        <div class="col-3 fw-light">Tags </div>
+                        <div class="col-3 fw-light">Action, Rounge-Lite </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">$99.99</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="horizonzerodawn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Horizon Zero Dawn</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/u4-FCsiF5x4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 fw-light">Developer </div>
+                        <div class="col-3 fw-light">Supergiant Games</div>
+                        <div class="col-3 fw-light">Tags </div>
+                        <div class="col-3 fw-light">Action, Rounge-Lite </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">$19.99</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="assassincreedvalhalla" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Assassin's Creed Valhalla</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ssrNcwxALS4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 fw-light">Developer </div>
+                        <div class="col-3 fw-light">Supergiant Games</div>
+                        <div class="col-3 fw-light">Tags </div>
+                        <div class="col-3 fw-light">Action, Rounge-Lite </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">$49.99</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--  -->
+<section id="store3" class="container">
+    <div class="">
+        <div class="text m-2">
+            <div style="color:white">Horror </div>
+            <div style="color:white">
+                <button type="button" class="btn btn-outline-light">See more</button>
+             </div>            
+        </div>       
+    <!-- <div class="mt-4"></div> -->
+
+    <div class="action">
+        <div class="col-lg-4 horror1">
+            <div class="card" data-toggle="modal" data-target="#residenevil3">
+                <img src="https://i.ytimg.com/vi/LxDm9T1TKvU/maxresdefault.jpg" class="card-img-top"
+                    alt="horrorno1">
+                    <div class="overlay">
+                        <div class="text-hover">
+                            <h6>Resident Evil 3</h6>
+                            <P>Jill Valentine is one of the last remaining people in Raccoon City to witness the atrocities Umbrella performed. </P>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="col-lg-4 horror2">
+            <div class="card" data-toggle="modal" data-target="#phasmophobia">
+                <img src="https://wallpaperaccess.com/full/4485269.jpg"
+                    class="card-img-top" alt="horrorno2">
+                    <div class="overlay">
+                        <div class="text-hover">
+                            <h6>Phasmophobia</h6>
+                            <P>Phasmophobia is a 4 player online co-op psychological horror. 
+                                
+                            </P>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <div class="col-lg-4 horror3">
+            <div class="card" data-toggle="modal" data-target="#songofhorror">
+                <img src="https://i.ytimg.com/vi/HMXxEupJz9g/maxresdefault.jpg" class="card-img-top"
+                    alt="horrorno3">
+                    <div class="overlay">
+                        <div class="text-hover">
+                            <h6>Song of Horror</h6>
+                            <P>A 3rd person, fixed-camera survival horror adventure. 
+                                Fear the Presence, a mysterious entity you cannot fight: stay alert, hide, breathe slowly... 
+                                
+                            </P>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<div class="modal fade" id="residenevil3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Resident Evil 3</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vXM0VzI2N4U"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="row">
+                    <div class="col-3 fw-light">Developer </div>
+                    <div class="col-3 fw-light">Supergiant Games</div>
+                    <div class="col-3 fw-light">Tags </div>
+                    <div class="col-3 fw-light">Action, Rounge-Lite </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">$19.99</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="phasmophobia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Phasmophovia</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sRa9oeo5KiY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="row">
+                    <div class="col-3 fw-light">Developer </div>
+                    <div class="col-3 fw-light">Supergiant Games</div>
+                    <div class="col-3 fw-light">Tags </div>
+                    <div class="col-3 fw-light">Action, Rounge-Lite </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">$9.99</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="songofhorror" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Song of Horror</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ndyXfnUZBwQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="row">
+                    <div class="col-3 fw-light">Developer </div>
+                    <div class="col-3 fw-light">Supergiant Games</div>
+                    <div class="col-3 fw-light">Tags </div>
+                    <div class="col-3 fw-light">Action, Rounge-Lite </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">$9.99</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!--  About Us -->
+<div class="container mt-5 fs-4 bg-light">About us</div>
 <div id="about">
     <div class="container">
         <div class="card">
@@ -113,7 +581,7 @@
             </div>
             <div class="content">
                 <div>
-                    <h3>Nguyen Nhat Khoa</h3>
+                    <h3>Le Duy Tien</h3>
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, amet!</p>
                     <a href="#">Read More</a>
                 </div>
