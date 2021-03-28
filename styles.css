@@ -325,12 +325,39 @@ footer-col .social-links a i:hover{
 /*responsive*/
     @media(max-width: 767px){
         .footer-col{
-        width: 50%;
+        width: 100%;
         margin-bottom: 30px;
+        margin-left: 50px;
         } 
+        .footer-col ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+
+        .footer-col ul li{  
+            font-size: 10px;
+            margin-left: 10px;
+        }
+
     }
     @media(max-width: 574px){
         .footer-col{
         width: 100%;
+        margin-left: 50px;
     }
+        .footer-col ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .footer-col ul li{  
+            font-size: 10px;
+            margin-left: 10px;
+        }
+
     }
+
+
