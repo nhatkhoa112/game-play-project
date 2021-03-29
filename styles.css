@@ -11,6 +11,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.navbar{
+    background-color: rgba(7,8,12,255);
+}
+
 /* update */
 /* img.mr-30{
     margin: 0 20px;
@@ -155,16 +159,60 @@ body{
     }
      */
 
-    #about{
+    .btn{
+        border: solid 2p;
+        padding: 5px 20px;
+        margin: 0 10px;
+    }
+
+    .btn1{
+        border-color: rgba(252,252,252,255);
+        color: rgba(252,252,252,255);
+    }
+
+    .btn2{
+        border-color: rgba(7,8,12,255);
+        background-color: rgba(252,252,252,255);
+        color: rgba(7,8,12,255);
+    }
+
+    .btn1:hover {
+        background-color: #3a86ff;
+        color: rgba(7,8,12,255);
+      }
+      
+    .btn2:hover {
+        background-color:  #ff9800;
+        color: rgba(252,252,252,255);
+    }
+    
+    #about1{
+        margin-top: 5rem;
+        background-color: rgba(7,8,12,255);
+    } 
+
+    #about2{
+        background-color:rgba(7,8,12,255);
+        display: flex;
+        justify-content: center;
+    }
+    #about3{
+        height: max-content;
+        background-color: rgba(7,8,12,255);
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #0c1821;
-        min-height: 100vh;
+        min-height: 50vh;
     }
 
+    #about4{
+    text-align: center;
+    background-color: rgba(7,8,12,255);
+    font-size: 3rem;
+    color: rgba(252,252,252,255);
+    }
 
-    #about .container{
+    #about3 .container{
         position: relative;
         width: 100%;
         display: flex;
@@ -173,22 +221,22 @@ body{
         margin: 20px 0;
     }
 
-    #about .container .card{
+    #about3 .container .card{
         position: relative;
         height: 250px;
-        background: #fff;
+        background:rgba(61,219,248,255);
         display: flex;
-        width: 30%;
-        margin: 30px 0;
+        width: 90%;
+        margin: 30px auto;
     }
 
     .container .card .imgBx{
-        position:absolute;
-        top: 0;
+        position: relative;
+        top: -40px;
         left: 0;
         width: 100%;
         height: 100%;
-        background: #333;
+        background: rgba(61,219,248,255);
         z-index: 1;
         display:flex;
         justify-content:center;
@@ -198,8 +246,8 @@ body{
     }
 
     .container .card .imgBx img{
-        width: 30%;
-        height: 30%;        
+        width: 5rem;
+        object-fit: contain;     
     }
 
     .container .card:hover .imgBx{
@@ -208,7 +256,7 @@ body{
         left: -75px;
         top: calc(50% - 75px);        
         transition: .5s ease-in-out;
-        background: #ff0057;
+        background: rgb(217,23,122);
     }
 
     .container .card:hover .imgBx img{
@@ -219,25 +267,27 @@ body{
     .container .card .imgBx:before{
         content: attr(data-text);
         position: absolute;
-        bottom: -150px;
+        bottom: -160px;
         left: 0;
         width: 100%;
         height: 100%;
         text-align: center;
         font-style: 4rem;
-        color: rgba(255,255,255,.05);
-        font-weight: 900;
-        font-size: 2.2rem;
+        color: rgba(7,8,12,255);
+        font-weight: 500;
+        padding-top: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .container .card .content{
-        position:absolute;
+        position: absolute;
         right: 0;
         width: 65%;
         height: 100%;
         display: flex;
+        color: rgba(7,8,12,255);
         justify-content: center;
-        align-items:center;
+        align-items: center;
         margin-right: 10px;
 
     }
@@ -272,9 +322,9 @@ body{
         display:inline-block;
         margin-top: 10px;
         padding: 5px 10px;
-        background: #333;
+        background: rgba(7,8,12,255);
         text-decoration: none;
-        color: #fff;
+        color: rgba(252,252,252,255);
     }
 
 
@@ -282,9 +332,9 @@ body{
         display:inline-block;
         margin-top: 10px;
         padding: 5px 10px;
-        background: #333;
+        background: rgba(7,8,12,255);
         text-decoration: none;
-        color: #fff;
+        color: rgba(252,252,252,255);
 
     }
 
@@ -345,7 +395,8 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: #000000;
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/006/164/977/large/le-long-theme-a.jpg?1496494729");
+    object-fit: fill;
     padding: 70px 0;
 }
 .footer-col{
@@ -469,7 +520,7 @@ footer-col .social-links a i:hover{
 
 
 .landingpage{
-    margin: 5rem 5rem;
+    margin: 6rem 8rem;
 
 }
 
@@ -527,7 +578,7 @@ iframe{
     padding:20px 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 20px rgba(0,0,0, 0.5);
+    box-shadow: 0 5px 20px rgba(161, 28, 28, 0.5);
     transition:.3s ease-in-out;
     margin-left: 80px;
 
